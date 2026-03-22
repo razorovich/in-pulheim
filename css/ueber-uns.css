@@ -1,0 +1,373 @@
+/* ============================================================
+   ÜBER UNS — Page-specific styles
+   ============================================================ */
+
+/* --- Section 1: Hero / Mission Statement --- */
+.about-hero {
+  padding: clamp(60px, 8vw, 100px) 0;
+}
+
+.about-hero .section-inner {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-hero-content {
+  flex: 1 1 55%;
+  min-width: 0;
+}
+
+.about-hero-subtitle {
+  font-size: var(--fs-body-lg);
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-top: 1.25rem;
+}
+
+.about-hero-illustration {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero-illustration svg {
+  max-width: 400px;
+  width: 100%;
+  color: var(--color-text);
+}
+
+/* --- Section 2: Unsere Vision --- */
+.about-vision {
+  padding: 80px 0 60px;
+}
+
+.about-vision-text {
+  max-width: 720px;
+  margin: 1.5rem auto 0;
+  border-left: 3px solid var(--color-accent);
+  padding-left: 24px;
+}
+
+.about-vision-text p {
+  margin-bottom: 1.25em;
+}
+
+.about-vision-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-vision h2 {
+  margin-top: 0.5rem;
+}
+
+/* --- Section 3: Was uns auszeichnet (Value Cards) --- */
+.about-values {
+  background-color: var(--color-bg-alt);
+}
+
+.about-values .kicker,
+.about-values h2 {
+  text-align: center;
+}
+
+.about-values h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.about-value-card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-value-card .icon--xl {
+  margin-bottom: 0.25rem;
+}
+
+.about-value-card h3 {
+  margin: 0;
+}
+
+.about-value-card p {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- Section 4: Zahlen & Fakten --- */
+.about-stats {
+  background-color: var(--color-bg);
+  padding: 80px 0;
+}
+
+.about-stats .kicker,
+.about-stats h2 {
+  text-align: center;
+}
+
+.about-stats h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.about-stat {
+  text-align: center;
+}
+
+.about-stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.about-stat-label {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* --- Section 5: Unser Ansatz (Steps) --- */
+.about-approach {
+  background-color: var(--color-bg-alt);
+}
+
+.about-approach h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.about-approach-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  border-left: 2px solid rgba(45, 90, 39, 0.12);
+  padding-left: 2rem;
+}
+
+.about-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.about-step-number {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--color-accent);
+  opacity: 0.3;
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 56px;
+}
+
+.about-step-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.about-step-content p {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- Section 6: Standort Pulheim --- */
+.about-location {
+  background-color: var(--color-bg);
+  padding: 80px 0;
+}
+
+.about-location h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-location-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-location-text {
+  flex: 1 1 60%;
+  min-width: 0;
+}
+
+.about-location-text p {
+  margin-bottom: 1.25em;
+  line-height: 1.7;
+}
+
+.about-location-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-location-visual {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-location-visual svg {
+  max-width: 240px;
+  width: 100%;
+  color: var(--color-text);
+}
+
+/* --- Section 7: CTA — reuses .final-cta pattern from homepage --- */
+.about-cta {
+  padding: var(--space-section) 0;
+}
+
+.about-cta .final-cta-card {
+  max-width: var(--max-w-text);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.about-cta .final-cta-inner {
+  background: var(--color-dark-bg);
+  color: var(--color-white);
+  border-radius: var(--radius-card);
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+}
+
+.about-cta .final-cta-inner h2 {
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+
+.about-cta .final-cta-inner p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+  font-size: var(--fs-body-lg);
+}
+
+/* --- Active nav state --- */
+.nav-links a[aria-current="page"] {
+  color: var(--color-accent);
+}
+
+/* --- Responsive: Tablet (≤ 1024px) --- */
+@media (max-width: 1024px) {
+  .about-hero .section-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-hero-content {
+    flex: none;
+    width: 100%;
+  }
+
+  .about-hero-illustration {
+    flex: none;
+    width: 100%;
+  }
+
+  .about-hero-illustration svg {
+    max-width: 320px;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem 2rem;
+  }
+
+  .about-location-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-location-text {
+    flex: none;
+    width: 100%;
+  }
+
+  .about-location-visual {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* --- Responsive: Mobile (≤ 640px) --- */
+@media (max-width: 640px) {
+  .about-hero {
+    padding: clamp(40px, 6vw, 60px) 0;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-value-card {
+    padding: 24px;
+  }
+
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-approach-steps {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .about-step {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .about-step-number {
+    font-size: 2rem;
+    min-width: auto;
+  }
+
+  .about-vision-text {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .about-vision {
+    padding: 60px 0 40px;
+  }
+
+  .about-location {
+    padding: 60px 0;
+  }
+
+  .about-stats {
+    padding: 60px 0;
+  }
+
+  .about-cta .final-cta-inner {
+    padding: 2.5rem 1.5rem;
+  }
+}
